@@ -1238,7 +1238,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  nav > ul {
     position: fixed;
     top: 0;
     right: -100%;
@@ -1250,15 +1250,15 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.4rem;
     transition: right 0.4s ease;
-    padding: 6rem 2rem 2rem;
+    padding: 5.5rem 2rem 2rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1000;
   }
   
-  nav.active ul {
+  nav.active > ul {
     right: 0;
   }
   
@@ -1266,6 +1266,10 @@ footer {
     display: block;
   }
 
+  nav ul li a {
+    padding: 0.35rem 0;
+  }
+   
   /* En mobile, le sous-menu Prestations est affiché déplié */
   .dropdown {
     position: static;
@@ -1276,9 +1280,13 @@ footer {
     border: none;
     background: transparent;
     min-width: 0;
-    padding: 0.5rem 0 0 1.25rem;
+    padding: 0.25rem 0 0 1.25rem;
   }
 
+  .dropdown li a {
+    padding: 0.3rem 0;
+  }
+   
   nav ul li.has-dropdown::after {
     display: none;
   }
@@ -1351,7 +1359,7 @@ nav ul li {
     display: block;
   }
 
-  nav ul {
+  nav > ul {
     position: fixed;
     top: 0;
     right: -100%;
@@ -1363,16 +1371,20 @@ nav ul li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.5rem;
-    padding: 6rem 2rem 2rem;
+    gap: 0.4rem;
+    padding: 5.5rem 2rem 2rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transition: right 0.4s ease;
     z-index: 1000;
   }
 
-  nav.active ul {
+  nav.active > ul {
     right: 0;
+  }
+
+  nav ul li a {
+    padding: 0.35rem 0;
   }
 }
 .prestation-icon img {
