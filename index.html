@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://feuillere-acupuncteur.fr/">
+  <meta name="robots" content="index,follow">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="Cabinet de Médecine Traditionnelle Chinoise à Hyères - Vanessa Feuillère. Accompagnement global, acupuncture, moxibustion, ventouses, massage Tui Na.">
+  <title>Vanessa FEUILLÈRE — Acupuncture & Médecine Traditionnelle Chinoise Hyères</title>
+  
+  <!-- Preload fonts to optimize loading performance -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Vanessa FEUILLÈRE — Acupuncture & Médecine Traditionnelle Chinoise Hyères">
+  <meta property="og:description" content="Accompagnement personnalisé et global pour restaurer et maintenir l’équilibre physique, émotionnel et énergétique.">
+  <meta property="og:image" content="assets/vanessa-accueil.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Vanessa Feuillère — Acupuncture & Médecine Traditionnelle Chinoise",
+    "url": "https://feuillere-acupuncteur.fr/",
+    "email": "acupuncture.vanessa@gmail.com",
+    "telephone": "+33615951482",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "647 chemin de la Vertaubanne",
+      "postalCode": "83400",
+      "addressLocality": "Hyères",
+      "addressCountry": "FR"
+    },
+    "sameAs": ["https://maps.google.com/?cid=5592665268242916395"]
+  }
+  </script></head>
+<body>
+
+  <!-- 1. HEADER & NAVIGATION -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logoLink">
+        <img class="logo-mark" src="assets/Logo.jpeg" alt="Logo du cabinet Vanessa Feuillère">
+        <span class="logo-text">
+          Vanessa FEUILLÈRE
+          <span class="sub">Acupuncture & Médecine Traditionnelle Chinoise</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#approche">Mon Approche</a></li>
+          <li class="has-dropdown">
+            <a href="#prestations">Prestations <span class="caret">⌄</span></a>
+            <ul class="dropdown">
+              <li><a href="prestation-medecine-chinoise.html">Médecine Traditionnelle Chinoise</a></li>
+              <li><a href="prestation-equilibrage-saisonnier.html">Équilibrage Énergétique Saisonnier</a></li>
+              <li><a href="prestation-massages-bien-etre.html">Massages Bien-Être</a></li>
+            </ul>
+          </li>
+          <li><a href="rendez-vous.html#tarifs">Tarifs</a></li>
+          <li><a href="#cabinet">Le Cabinet</a></li>
+          <li><a href="#infos">Infos Pratiques</a></li>
+          <li><a href="rendez-vous.html" class="btn btn-primary btn-nav-cta">Prendre RDV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section id="hero" class="hero-wrapper">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-tag">Cabinet à Hyères</span>
+          <h1>Retrouvez votre <span>équilibre</span> physique, émotionnel & énergétique</h1>
+          <p>
+            Cabinet de Médecine Traditionnelle Chinoise à Hyères proposant un accompagnement personnalisé, global et préventif pour restaurer et maintenir la vitalité des femmes et hommes, enfants (dès 7 ans) et seniors et des sportifs.
+          </p>
+          <div class="hero-actions">
+            <a href="rendez-vous.html" class="btn btn-primary">Prendre un Rendez-vous</a>
+            <a href="#prestations" class="btn btn-secondary">Découvrir mes soins</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-shape-back"></div>
+          <div class="hero-img-wrapper">
+            <img src="assets/vanessa-accueil.jpg" alt="Vanessa Feuillère vous accueille dans son cabinet à Hyères">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MON APPROCHE / QUI SUIS-JE -->
+  <section id="approche" class="section section-alt">
+    <div class="container">
+      <div class="approach-grid">
+        <div class="approach-visual reveal-item">
+          <div class="approach-img-container">
+            <img src="assets/vanessa_feuillere.jpg" alt="Portrait de Vanessa Feuillère, praticienne en médecine chinoise">
+          </div>
+          <div class="experience-badge">
+            <span class="num" id="approachRating">5.0</span>
+            <span class="text"><span aria-hidden="true">&#9733;</span> <span id="approachReviewCount">13</span> avis Google</span>
+          </div>
+        </div>
+        <div class="approach-text reveal-item">
+          <span class="hero-tag">Qui suis-je ?</span>
+          <h2>Mon Approche de la Médecine Traditionnelle Chinoise</h2>
+          <p class="lead">
+            « Pour restaurer et maintenir l'harmonie intérieure face aux déséquilibres du quotidien. »
+          </p>
+          <p>
+            Praticienne passionnée, mon objectif est de proposer un accompagnement global et individualisé. J'interviens dans une démarche tant curative que préventive (équilibrages énergétiques à chaque changement de saison).
+          </p>
+          <p>
+            J'accompagne les enfants, femmes, hommes, seniors et sportifs confrontés à diverses problématiques :
+          </p>
+          <ul class="check-list" style="margin-bottom: 2rem;">
+            <li><i data-lucide="check-circle"></i>Pathologies liées au stress et anxiété (examens, surmenage, dépression, ...)</li>
+            <li><i data-lucide="check-circle"></i>Fatigue chronique, baisse d'énergie et troubles du sommeil</li>
+            <li><i data-lucide="check-circle"></i>Douleurs tendino-musculaires, articulaires et rhumatismales (tendinites, contractures, déchirures, lombalgie, sciatique, ...)</li>
+            <li><i data-lucide="check-circle"></i>Médecine générale (troubles digestifs, migraine, hypertension, vertiges, ...)</li>
+            <li><i data-lucide="check-circle"></i>Troubles digestifs</li>
+            <li><i data-lucide="check-circle"></i>Troubles féminins (règles, périménopause)</li>
+            <li><i data-lucide="check-circle"></i>Traitement des addictions (arrêt du tabac, ...)</li>
+          </ul>
+          <a href="rendez-vous.html" class="btn btn-secondary">Discuter de vos besoins</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b. PARCOURS & FORMATIONS -->
+  <section id="parcours" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="hero-tag">À Propos</span>
+        <h2>Le Parcours de Vanessa Feuillère</h2>
+      </div>
+
+      <div class="parcours-grid">
+        <div class="parcours-bio reveal-item">
+          <p>Ingénieure en électricité de formation, j'ai travaillé près de vingt ans dans l'industrie, en France et pendant six ans à New York. Mes expatriations, notamment à Madrid et en Corée du Sud, m'ont fait découvrir d'autres approches de la santé et ont profondément enrichi ma vision du soin.</p>
+          <p>Attirée par les bienfaits de l'acupuncture, je me suis formée à la Médecine Traditionnelle Chinoise à Aix-en-Provence, en acupuncture et massage thérapeutique Tuina. J'ai complété ce parcours par des stages en France, en Corée du Sud et en Indonésie.</p>
+          <p>J'ai ouvert mon premier cabinet à Hyères en 2020, puis exercé à Séoul de 2022 à 2024 auprès d'une patientèle internationale. Depuis septembre 2024, je vous accueille de nouveau à Hyères.</p>
+          <p>Aujourd'hui, je vous propose une approche fondée sur la rigueur, l'écoute et une prise en charge personnalisée, pour vous accompagner vers un mieux-être durable.</p>
+        </div>
+
+        <div class="parcours-formations reveal-item">
+          <h3>Mes Formations</h3>
+          <ul class="formation-list">
+            <li>
+              <span class="formation-year">2026</span>
+              <div class="formation-detail">
+                <p>Massage Face Cupping — Formabelle, Montpellier</p>
+                <p>Diététique Chinoise, l'alimentation des 5 éléments — Nina Volt</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2025</span>
+              <div class="formation-detail">
+                <p>Gynécologie Chinoise : Physiologie et thérapeutique des règles — Philippe Sionneau</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2023</span>
+              <div class="formation-detail">
+                <p>Natural Acupuncture — Ecan International School, Bali — David Lujan</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2022</span>
+              <div class="formation-detail">
+                <p>Yamamoto New Scalp Acupuncture (YNSA) — PNIMA, Aix-en-Provence</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2018 – 2021</span>
+              <div class="formation-detail">
+                <p>Praticienne en Acupuncture et Tui Na thérapeutique — École de Médecine Traditionnelle Chinoise Zhong Li, Aix-en-Provence</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2020</span>
+              <div class="formation-detail">
+                <p>Réflexologie Plantaire Chinoise — À Fleur de Peau, Marseille</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2020</span>
+              <div class="formation-detail">
+                <p>Praticienne en Tui Nà bien-être (massage énergétique chinois) — Zhong Li, Aix-en-Provence</p>
+              </div>
+            </li>
+            <li>
+              <span class="formation-year">2018</span>
+              <div class="formation-detail">
+                <p>Praticienne en massage bien-être californien — Ling Dao, Le Pradet</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PRESTATIONS -->
+  <section id="prestations" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="hero-tag">Soins & Thérapies</span>
+        <h2>Les Prestations du Cabinet</h2>
+        <p>Trois grandes familles de soins, entièrement personnalisées selon votre profil sont proposées au cabinet. Cliquez sur une prestation pour en découvrir le détail.</p>
+      </div>
+
+      <div class="prestations-grid">
+        <!-- Prestation 1 : Médecine Traditionnelle Chinoise -->
+        <a href="prestation-medecine-chinoise.html" class="prestation-card">
+          <img class="prestation-photo" src="assets/salle-de-soin.jpg" alt="Salle de soin préparée pour une séance d acupuncture" loading="lazy">
+          <h3>Séance de Médecine Traditionnelle Chinoise</h3>
+          <p>
+            Après un bilan énergétique complet, la séance associe selon vos besoins acupuncture, ventouses, moxibustion, auriculothérapie, réflexologie plantaire, électroponcture et huiles essentielles.
+          </p>
+          <span class="card-link">En savoir plus <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></span>
+        </a>
+
+        <!-- Prestation 2 : Équilibrage saisonnier -->
+        <a href="prestation-equilibrage-saisonnier.html" class="prestation-card">
+          <img class="prestation-photo" src="assets/salle-de-soin-2.jpg" alt="Espace de soin pour un accompagnement saisonnier" loading="lazy">
+          <h3>Équilibrage Énergétique Saisonnier</h3>
+          <p>
+            Séances préventives à chaque changement de saison pour préparer le corps aux énergies à venir, renforcer le système immunitaire et entretenir la vitalité tout au long de l'année.
+          </p>
+          <span class="card-link">En savoir plus <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></span>
+        </a>
+
+        <!-- Prestation 3 : Massages bien-être -->
+        <a href="prestation-massages-bien-etre.html" class="prestation-card">
+          <img class="prestation-photo" src="assets/salle-de-soin-3.jpg" alt="Table de massage dans le cabinet" loading="lazy">
+          <h3>Massages Bien-Être</h3>
+          <p>
+            Chinois Tui Na, californien, réflexologie plantaire ou face cupping (nouveau) : une heure ou une heure trente de détente profonde, dans un cadre calme et chaleureux.
+          </p>
+          <span class="card-link">En savoir plus <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Déroulement d'une Séance -->
+  <section id="seance" class="section">
+    <div class="container">
+      <div class="approach-grid" style="grid-template-columns: 1.05fr 0.95fr;">
+        <div class="approach-text reveal-item">
+          <span class="hero-tag">Au Cabinet</span>
+          <h2>Déroulement d'une Séance</h2>
+          <p class="lead">
+            Chaque consultation dure environ 1 heure (un peu plus lors d'une 1ère séance) et est construite sur mesure selon votre état et vos besoins du moment.
+          </p>
+          <div style="margin-top: 2rem;">
+            <div style="margin-bottom: 2rem; display: flex; gap: 1.5rem;">
+              <div style="width: 40px; height: 40px; background-color: var(--color-bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; color: var(--color-accent); flex-shrink: 0;">1</div>
+              <div>
+                <h4 style="font-family: var(--font-body); font-weight: 700; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">Le Bilan Énergétique (Anamnèse)</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-muted);">La séance débute toujours par un temps d'échange approfondi afin de clarifier vos symptômes et attentes. Votre historique de santé, vos habitudes de vie, votre sommeil et votre état émotionnel sont également pris en considération ainsi que l'observation de la langue et la prise des pouls.</p>
+              </div>
+            </div>
+            <div style="margin-bottom: 2rem; display: flex; gap: 1.5rem;">
+              <div style="width: 40px; height: 40px; background-color: var(--color-bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; color: var(--color-accent); flex-shrink: 0;">2</div>
+              <div>
+                <h4 style="font-family: var(--font-body); font-weight: 700; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">La Séance de Soin</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-muted);">A l'issue du bilan énergétique, la solution therapeutique identifiée est expliquée. Elle fait habituellement appel à une combinaison de plusieurs outilsde la MTC (acupuncture, ventouses, auriculothérapie, moxibustion ou Tuina). Les aiguilles sont stériles, à usage unique et indolores à la pose.</p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1.5rem;">
+              <div style="width: 40px; height: 40px; background-color: var(--color-bg-alt); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 700; color: var(--color-accent); flex-shrink: 0;">3</div>
+              <div>
+                <h4 style="font-family: var(--font-body); font-weight: 700; font-size: 1rem; color: var(--color-primary); margin-bottom: 0.25rem;">Intégration & Conseils</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-text-muted);">La séance se termine par des recommandations d'hygiène de vie (diététique, mouvement) et d'auriculothérapie fin de prolonger les effets de la séance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="approach-visual reveal-item">
+          <div class="approach-img-container" style="height: 440px;">
+            <img src="assets/salle-de-soin.jpg" alt="La salle de soin du cabinet de Vanessa Feuillère à Hyères">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4b. LE CABINET EN IMAGES -->
+  <section id="cabinet" class="section section-alt">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="hero-tag">Le Lieu</span>
+        <h2>Le Cabinet en Images</h2>
+        <p>Un espace calme et lumineux au sein de la bastide « Les Charmettes », à Hyères, entièrement dédié à votre bien-être.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal-item">
+          <img src="assets/salle-porte.jpg" alt="L'entrée de la salle de soins énergétiques chinois" loading="lazy">
+          <figcaption>L'entrée de la salle de soin</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="assets/salle-de-soin-2.jpg" alt="La salle de soin avec table de massage" loading="lazy">
+          <figcaption>La salle de soin et sa table de massage</figcaption>
+        </figure>
+        <figure class="gallery-item reveal-item">
+          <img src="assets/salle-de-soin-3.jpg" alt="Vue d'ensemble de la salle de soin lumineuse" loading="lazy">
+          <figcaption>Un cadre apaisant et baigné de lumière</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4c. AVIS GOOGLE -->
+  <section id="avis" class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="hero-tag">Ils Témoignent</span>
+        <h2>Vos Avis</h2>
+        <p id="reviewsSummary"><strong>5.0 / 5</strong> — 13 avis sur la fiche Google du cabinet.</p>
+      </div>
+
+      <!-- Rempli automatiquement avec les avis de la fiche Google (via le backend) -->
+      <div class="reviews-grid" id="reviewsGrid"></div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="https://www.google.com/search?q=Vanessa+FEUILLERE+Acupuncture+%26+M%C3%A9decine+Chinoise+Hy%C3%A8res" target="_blank" rel="noopener" class="btn btn-secondary" id="reviewsLink">Voir tous les avis sur Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. INFOS PRATIQUES & CONTACT -->
+  <section id="infos" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Informations Pratiques -->
+        <div class="info-cards">
+          <div class="section-title-wrapper" style="text-align: left; margin-bottom: 2.5rem; max-width: 100%;">
+            <span class="hero-tag">Horaires & Lieu</span>
+            <h2>Informations Pratiques</h2>
+            <p>Le cabinet est situé à Hyères et vous accueille sur rendez-vous uniquement.</p>
+          </div>
+
+          <!-- Info Card 1: Localisation -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="info-card-content">
+              <h4>Adresse du Cabinet</h4>
+              <p>647 chemin de la Vertaubanne<br>83400 Hyères, France</p>
+            </div>
+          </div>
+
+          <!-- Photo de l'entrée -->
+          <figure class="info-photo">
+            <img src="assets/entree-les-charmettes.jpg" alt="Vanessa Feuillère devant le portail d'entrée de la bastide Les Charmettes" loading="lazy">
+            <figcaption>Repérez le portail « Les Charmettes » : Vanessa vous y accueille sur rendez-vous.</figcaption>
+          </figure>
+
+          <!-- Info Card 2: Contact -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="info-card-content">
+              <h4>Contact direct</h4>
+              <p>Téléphone : <a href="tel:0615951482" style="font-weight: 600; color: var(--color-primary);">06 15 95 14 82</a><br>E-mail : acupuncture.vanessa@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Colonne droite : CTA réservation + horaires -->
+        <div class="info-cards">
+          <!-- CTA vers la page de réservation -->
+          <div class="contact-form-wrapper" style="text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+            <div class="prestation-icon" style="margin: 0 auto 1rem auto;">
+              <i data-lucide="calendar-check" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3>Réservez votre Séance</h3>
+            <p>
+              Choisissez votre prestation, votre date et votre créneau horaire sur la page de réservation : Vanessa vous recontacte rapidement pour confirmer votre rendez-vous.
+            </p>
+            <div>
+              <a href="rendez-vous.html" class="btn btn-primary">Prendre Rendez-vous</a>
+            </div>
+            <p style="font-size: 0.9rem; margin: 1rem 0 0 0;">
+              Ou par téléphone : <a href="tel:0615951482" style="font-weight: 700; color: var(--color-primary);">06 15 95 14 82</a>
+            </p>
+          </div>
+
+          <!-- Horaires d'ouverture -->
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div class="info-card-content" style="width: 100%;">
+              <h4>Horaires d'ouverture</h4>
+              <table class="hours-table"><tbody id="hoursTable">
+                <tr>
+                  <td>Lundi</td>
+                  <td>14:00 — 19:00</td>
+                </tr>
+                <tr>
+                  <td>Mardi</td>
+                  <td>09:00 — 19:00</td>
+                </tr>
+                <tr>
+                  <td>Mercredi</td>
+                  <td>14:00 — 18:00</td>
+                </tr>
+                <tr>
+                  <td>Jeudi</td>
+                  <td>09:00 — 19:00</td>
+                </tr>
+                <tr>
+                  <td>Vendredi</td>
+                  <td>09:00 — 12:00</td>
+                </tr>
+                <tr>
+                  <td>Samedi</td>
+                  <td>Fermé</td>
+                </tr>
+                <tr>
+                  <td>Dimanche</td>
+                  <td>Fermé</td>
+                </tr>
+              </tbody></table>
+              <p id="hoursNote" style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0.75rem 0 0 0;">
+                Horaires à jour sur la <a href="https://www.google.com/search?q=Vanessa+FEUILLERE+Acupuncture+%26+M%C3%A9decine+Chinoise+Hy%C3%A8res" target="_blank" rel="noopener" style="font-weight: 600;">fiche Google du cabinet</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte du cabinet, sur toute la largeur -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=647%20chemin%20de%20la%20Vertaubanne%2C%2083400%20Hy%C3%A8res&hl=fr&z=15&output=embed"
+          title="Plan d'accès au cabinet — 647 chemin de la Vertaubanne, 83400 Hyères"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <a href="#hero" class="logo">
+            <span class="logo-text">
+              Vanessa FEUILLÈRE
+              <span class="sub">Acupuncture & Médecine Traditionnelle Chinoise</span>
+            </span>
+          </a>
+          <p>
+            Cabinet de Médecine Traditionnelle Chinoise à Hyères (La Londe-Les-Maures, Le Pradet, La Crau, Carqueiranne, La Moutonne). Rétablir la circulation énergétique pour un mieux-être quotidien et une santé durable.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="prestation-medecine-chinoise.html">Médecine Traditionnelle Chinoise</a></li>
+            <li><a href="prestation-equilibrage-saisonnier.html">Équilibrage Énergétique Saisonnier</a></li>
+            <li><a href="prestation-massages-bien-etre.html">Massages Bien-Être</a></li>
+            <li><a href="rendez-vous.html">Prendre Rendez-vous</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Cabinet Hyères</h4>
+          <p>647 chemin de la Vertaubanne<br>83400 Hyères</p>
+          <p>Tél : 06 15 95 14 82</p>
+          <p style="margin-top: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <i data-lucide="star" style="fill: var(--color-accent); color: var(--color-accent); width: 16px; height: 16px;"></i>
+            <strong>5.0 / 5.0</strong> — 13 avis Google
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vanessa FEUILLÈRE. Tous droits réservés.</p>
+        <p style="font-size: 0.75rem; max-width: 500px; text-align: right; opacity: 0.5;">
+          Note : Les techniques présentées relèvent d'approches énergétiques non conventionnelles et ne se substituent en aucun cas à un avis ou un traitement médical.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP CDN (animation du hero uniquement — facultatif) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="main.js"></script>
+  <script>
+    // Initialize Lucide icons (sans bloquer si le CDN est indisponible)
+    if (typeof lucide !== "undefined") lucide.createIcons();
+  </script>
+</body>
+</html>
