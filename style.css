@@ -1248,9 +1248,13 @@ footer {
     background-color: var(--color-bg);
     box-shadow: -10px 0 30px rgba(74, 93, 78, 0.05);
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
     transition: right 0.4s ease;
+    padding: 6rem 2rem 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     z-index: 1000;
   }
   
@@ -1357,8 +1361,12 @@ nav ul li {
     background-color: var(--color-bg);
     box-shadow: -10px 0 30px rgba(74, 93, 78, 0.05);
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 6rem 2rem 2rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     transition: right 0.4s ease;
     z-index: 1000;
   }
