@@ -73,7 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const reviewsGrid = document.getElementById("reviewsGrid");
   const approachRating = document.getElementById("approachRating");
   const approachReviewCount = document.getElementById("approachReviewCount");
-  if (BACKEND_URL && reviewsGrid) {
+  const ratingSpans = document.querySelectorAll(".js-rating");
+  const countSpans = document.querySelectorAll(".js-review-count");
+  const hasReviewTarget = reviewsGrid || approachRating || ratingSpans.length || countSpans.length;
+  if (BACKEND_URL && hasReviewTarget) {
     fetch(BACKEND_URL + "?action=avis")
       .then(r => r.json())
       .then(data => {
@@ -90,9 +93,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (data.note && approachRating) approachRating.textContent = data.note.toFixed(1);
         if (Number.isFinite(data.total) && approachReviewCount) approachReviewCount.textContent = data.total;
 
+        // Note et nombre d'avis repris dans les pieds de page de toutes les pages
+        if (Number.isFinite(data.note)) {
+          ratingSpans.forEach(el => { el.textContent = data.note.toFixed(1); });
+        }
+        if (Number.isFinite(data.total)) {
+          countSpans.forEach(el => { el.textContent = data.total; });
+        }
+
         const lien = document.getElementById("reviewsLink");
         if (lien && data.lien) lien.href = data.lien;
 
+        if (!reviewsGrid) return;
         if (!Array.isArray(data.avis) || data.avis.length === 0) return;
 
         reviewsGrid.innerHTML = "";
